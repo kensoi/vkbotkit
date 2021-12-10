@@ -13,9 +13,13 @@
         <link rel="manifest" href="./manifest.json" />
 
         <title>dshdev</title>
-        <script>location.href = "https://github.com/kensoi/vkbotkit/tree/dev/";</script>
+        <script>
+            const resolve = () => {
+                location.href = "https://github.com/kensoi/vkbotkit/tree/dev/";
+            }
+        </script>
     </head>
-    <body>
+    <body onload="resolve()">
      <h1>
       Resolving to Github...
      </h1>
